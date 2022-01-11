@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feature.UpdateTestingStatus"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="4dp"
+        android:background="@color/colortext">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Testing Status Update"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/upDatedWork"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_baseline_group_work_24"/>
+
+    </FrameLayout>
+    <EditText
+        android:id="@+id/work"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_margin="5dp"
+        android:hint="Work done today..."
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorOffBlack"
+        android:textColorHint="#A6A6A6"/>
+    <EditText
+        android:id="@+id/hour"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_margin="5dp"
+        android:hint="Working hour.."
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorOffBlack"
+        android:textColorHint="#A6A6A6"/>
+    <EditText
+        android:id="@+id/people"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_margin="5dp"
+        android:hint="No of people.."
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorOffBlack"
+        android:textColorHint="#A6A6A6"/>
+    <LinearLayout
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:background="@color/colortext"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Testing Completed"
+        android:textColor="@color/colorOffBlack"
+        android:layout_gravity="end"
+        android:layout_margin="20dp"/>
+
+
+</LinearLayout>

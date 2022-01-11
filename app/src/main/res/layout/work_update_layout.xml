@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFBF4"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Work"
+        android:textColor="@color/colorOffBlack"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emp"
+        android:textColor="@color/colorOffBlack"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Working"
+        android:textColor="@color/colorOffBlack"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Updated by"
+        android:textColor="@color/colorOffBlack"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textColor="@color/colorOffBlack"
+        android:textSize="12sp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="2dp"
+    android:background="@drawable/item_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_margin="6dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:gravity="center"
+        >
+
+    <ImageView
+        android:id="@+id/product_added_feature_image"
+        android:scaleType="centerInside"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="60dp"
+        android:background="@color/colorOffBlack"
+        android:layout_marginHorizontal="3dp"/>
+
+    <LinearLayout
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:layout_width="0dp"
+        android:layout_weight="3.5"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/product_added_feature_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
