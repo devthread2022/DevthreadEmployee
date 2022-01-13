@@ -41,7 +41,7 @@ public class featureFragment extends Fragment {
         firebaseAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference();
         uid = firebaseAuth.getCurrentUser().getUid();
-        binding.demo.setOnClickListener(view1 -> {
+        /*binding.demo.setOnClickListener(view1 -> {
             Fragment demo = new DemoRequests();
             loadFragment(demo,"DemoRequests");
         });
@@ -148,7 +148,7 @@ public class featureFragment extends Fragment {
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
-        });
+        });*/
         return view;
     }
     private void loadFragment(Fragment fragment, String tag) {
