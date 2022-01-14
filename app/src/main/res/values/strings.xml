@@ -2,4 +2,12 @@
     <string name="app_name">DevthreadEmployee</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="for_the_purpose_of_business">For the purpose of business continuity and planning, it is important for the organisation to know your current location.</string>
+    <string-array name="l_type">
+        <item>Select leave type</item>
+        <item>Casual</item>
+        <item>Medical</item>
+        <item>Emergency</item>
+        <item>Half Day</item>
+    </string-array>
 </resources>

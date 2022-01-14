@@ -149,6 +149,18 @@ public class featureFragment extends Fragment {
 
             }
         });*/
+        binding.workUpdate.setOnClickListener(view1 -> {
+            Fragment fragment = new WorkUpdate();
+            loadFragment(fragment,"WorkUpdate");
+        });
+        binding.attendance.setOnClickListener(view1 -> {
+            Fragment fragment = new Attendance();
+            loadFragment(fragment,"Attendance");
+        });
+        binding.leave.setOnClickListener(view1 -> {
+            Fragment fragment = new Leave();
+            loadFragment(fragment,"Leave");
+        });
         return view;
     }
     private void loadFragment(Fragment fragment, String tag) {
