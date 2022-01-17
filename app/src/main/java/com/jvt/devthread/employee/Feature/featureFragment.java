@@ -19,12 +19,12 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.jvt.devthread.employee.Activity.Common.Common;
 import com.jvt.devthread.employee.R;
 import com.jvt.devthread.employee.databinding.FragmentFeatureBinding;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import static com.jvt.devthread.employee.Activity.Common.Common.activeFragment;
 
 public class featureFragment extends Fragment {
     private FragmentFeatureBinding binding;
@@ -173,7 +173,7 @@ public class featureFragment extends Fragment {
 
             }
             handler.post(()->{
-                activeFragment=getActivity().getSupportFragmentManager().findFragmentById(R.id.frame_container);
+                Common.activeFragment =getActivity().getSupportFragmentManager().findFragmentById(R.id.frame_container);
             });
         });
 

@@ -1,13 +1,12 @@
 package com.jvt.devthread.employee.Activity.Common;
 
 import androidx.fragment.app.Fragment;
-import com.jvt.devthread.employee.Activity.Model.UserInfoModel;
 
 public class Common {
     public static String IMAGE_REF = "REFRENCE";
     public static String IMAGE_REF_TEST = "REFRENCE";
     public static String ORDER_REF = "ORDER";
-    public static UserInfoModel currentUser;
+    //public static UserInfoModel currentUser;
     public static final String USER_REFERENCES="Users";
     public static String FEATURE_REFERENCES="Feature";
     public static String USER_UID ="UID" ;

@@ -24,7 +24,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.jvt.devthread.employee.Activity.Common.Common;
-import com.jvt.devthread.employee.Activity.Model.UserInfoModel;
 import com.jvt.devthread.employee.R;
 
 import java.util.Objects;
@@ -90,7 +89,7 @@ public class login extends AppCompatActivity {
                     userRef.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            Common.currentUser= dataSnapshot.getValue(UserInfoModel.class);
+                            //Common.currentUser= dataSnapshot.getValue(UserInfoModel.class);
                         }
 
                         @Override
