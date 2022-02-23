@@ -214,7 +214,9 @@
             <CalendarView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/from_calender"/>
+                android:id="@+id/from_calender"
+                android:background="#F4DAFF"
+                android:dateTextAppearance="@style/CalenderTextColor"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -318,7 +320,9 @@
             <CalendarView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/to_calender"/>
+                android:id="@+id/to_calender"
+                android:background="#F4DAFF"
+                android:dateTextAppearance="@style/CalenderTextColor"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"

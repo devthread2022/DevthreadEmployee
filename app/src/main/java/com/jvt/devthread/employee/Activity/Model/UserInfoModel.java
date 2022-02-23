@@ -1,31 +1,73 @@
 package com.jvt.devthread.employee.Activity.Model;
 
 public class UserInfoModel {
-    public String id;
-    public String userMobileNumber;
+    String uid, name, empId, status, profile, gitHub, education, address, email, phone;
 
     public UserInfoModel() {
     }
 
-    public UserInfoModel(String email, String password) {
-        this.email = email;
-        this.password = password;
+    public String getUid() {
+        return uid;
     }
 
-    public String getId() {
-        return id;
+    public void setUid(String uid) {
+        this.uid = uid;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public String getName() {
+        return name;
     }
 
-    public String getUserMobileNumber() {
-        return userMobileNumber;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setUserMobileNumber(String userMobileNumber) {
-        this.userMobileNumber = userMobileNumber;
+    public String getEmpId() {
+        return empId;
+    }
+
+    public void setEmpId(String empId) {
+        this.empId = empId;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getProfile() {
+        return profile;
+    }
+
+    public void setProfile(String profile) {
+        this.profile = profile;
+    }
+
+    public String getGitHub() {
+        return gitHub;
+    }
+
+    public void setGitHub(String gitHub) {
+        this.gitHub = gitHub;
+    }
+
+    public String getEducation() {
+        return education;
+    }
+
+    public void setEducation(String education) {
+        this.education = education;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getEmail() {
@@ -36,26 +78,24 @@ public class UserInfoModel {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public String getProfilePic() {
-        return profilePic;
+    public UserInfoModel(String uid, String name, String empId, String status, String profile, String gitHub, String education, String address, String email, String phone) {
+        this.uid = uid;
+        this.name = name;
+        this.empId = empId;
+        this.status = status;
+        this.profile = profile;
+        this.gitHub = gitHub;
+        this.education = education;
+        this.address = address;
+        this.email = email;
+        this.phone = phone;
     }
-
-    public void setProfilePic(String profilePic) {
-        this.profilePic = profilePic;
-    }
-
-    public String email;
-    public String password;
-    public String profilePic;
-
-
-
 }

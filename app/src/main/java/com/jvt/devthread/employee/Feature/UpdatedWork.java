@@ -18,7 +18,6 @@ import com.google.firebase.database.ValueEventListener;
 import com.jvt.devthread.employee.Activity.Adapters.WorkUpdateAdapter;
 import com.jvt.devthread.employee.Activity.Common.Common;
 import com.jvt.devthread.employee.Activity.Model.WorkUpdateModel;
-import com.jvt.devthread.employee.R;
 import com.jvt.devthread.employee.databinding.FragmentUpdatedWorkBinding;
 
 import java.util.ArrayList;

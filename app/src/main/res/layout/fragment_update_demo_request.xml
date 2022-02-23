@@ -9,17 +9,23 @@
     android:orientation="vertical">
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:elevation="4dp"
-        android:background="@color/colortext">
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:elevation="1dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24_black"
+            android:layout_gravity="center|start"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Update Status"
-            android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textColor="@color/colorOffBlack"
             android:layout_gravity="center"/>
-
     </FrameLayout>
     <TextView
         android:id="@+id/demo_id"
@@ -28,6 +34,7 @@
         android:layout_gravity="center"
         android:textSize="14sp"
         android:text="DEMOID"
+        android:fontFamily="@font/open_sans"
         android:layout_margin="5dp"
         android:textColor="@color/colorOffBlack"/>
     <ScrollView
@@ -54,7 +61,8 @@
                         android:layout_height="wrap_content"
                         android:text="Customer need meets"
                         android:textColor="@color/colorOffBlack"
-                        android:textSize="13sp"/>
+                        android:textSize="13sp"
+                        android:fontFamily="@font/open_sans"/>
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -66,6 +74,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="YES"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                             <RadioButton
@@ -73,6 +82,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="NO"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                         </RadioGroup>
@@ -82,7 +92,8 @@
                         android:layout_height="wrap_content"
                         android:text="Price Negotiation"
                         android:textColor="@color/colorOffBlack"
-                        android:textSize="13sp"/>
+                        android:textSize="13sp"
+                        android:fontFamily="@font/open_sans"/>
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -94,6 +105,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="YES"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                             <RadioButton
@@ -101,6 +113,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="NO"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                         </RadioGroup>
@@ -110,7 +123,8 @@
                         android:layout_height="wrap_content"
                         android:text="Product design likes"
                         android:textColor="@color/colorOffBlack"
-                        android:textSize="13sp"/>
+                        android:textSize="13sp"
+                        android:fontFamily="@font/open_sans"/>
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -122,6 +136,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="OK"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                             <RadioButton
@@ -129,6 +144,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Need Change"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                         </RadioGroup>
@@ -141,6 +157,7 @@
                         android:background="@drawable/edit_text_border"
                         android:hint="Mention required changes"
                         android:textSize="13sp"
+                        android:fontFamily="@font/open_sans"
                         android:padding="5dp"
                         android:textColorHint="#9C9C9C"
                         android:textColor="@color/colorOffBlack"/>
@@ -150,6 +167,7 @@
                         android:text="Reference app meets the requirement"
                         android:textColor="@color/colorOffBlack"
                         android:textSize="13sp"
+                        android:fontFamily="@font/open_sans"
                         android:layout_marginTop="5dp"/>
                     <FrameLayout
                         android:layout_width="match_parent"
@@ -162,6 +180,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="YES"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                             <RadioButton
@@ -169,6 +188,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="NO"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                         </RadioGroup>
@@ -177,6 +197,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Delivery time"
+                        android:fontFamily="@font/open_sans"
                         android:textColor="@color/colorOffBlack"
                         android:textSize="13sp"/>
                     <FrameLayout
@@ -190,6 +211,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Good"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                             <RadioButton
@@ -197,6 +219,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Late"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                         </RadioGroup>
@@ -205,6 +228,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Offers/Discounts"
+                        android:fontFamily="@font/open_sans"
                         android:textColor="@color/colorOffBlack"
                         android:textSize="13sp"/>
                     <FrameLayout
@@ -218,6 +242,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="OK"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                             <RadioButton
@@ -226,6 +251,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Want more discounts"
                                 android:textSize="14sp"
+                                android:fontFamily="@font/open_sans"
                                 android:textColor="@color/colorOffBlack"/>
                         </RadioGroup>
                     </FrameLayout>
@@ -234,7 +260,8 @@
                         android:layout_height="wrap_content"
                         android:text="Customer experience meets"
                         android:textColor="@color/colorOffBlack"
-                        android:textSize="13sp"/>
+                        android:textSize="13sp"
+                        android:fontFamily="@font/open_sans"/>
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -246,6 +273,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="YES"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                             <RadioButton
@@ -253,6 +281,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Need Change"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                         </RadioGroup>
@@ -266,6 +295,7 @@
                         android:hint="Mention required changes"
                         android:textSize="13sp"
                         android:padding="5dp"
+                        android:fontFamily="@font/open_sans"
                         android:textColorHint="#9C9C9C"
                         android:textColor="@color/colorOffBlack"/>
                     <TextView
@@ -274,6 +304,7 @@
                         android:text="Client experience meets"
                         android:textColor="@color/colorOffBlack"
                         android:textSize="13sp"
+                        android:fontFamily="@font/open_sans"
                         android:layout_marginTop="5dp"/>
                     <FrameLayout
                         android:layout_width="match_parent"
@@ -286,6 +317,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="YES"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                             <RadioButton
@@ -293,6 +325,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Need Change"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                         </RadioGroup>
@@ -305,6 +338,7 @@
                         android:background="@drawable/edit_text_border"
                         android:hint="Mention required changes"
                         android:textSize="13sp"
+                        android:fontFamily="@font/open_sans"
                         android:padding="5dp"
                         android:textColorHint="#9C9C9C"
                         android:textColor="@color/colorOffBlack"/>
@@ -314,6 +348,7 @@
                         android:text="Features requirements meets"
                         android:textColor="@color/colorOffBlack"
                         android:textSize="13sp"
+                        android:fontFamily="@font/open_sans"
                         android:layout_marginTop="5dp"/>
                     <FrameLayout
                         android:layout_width="match_parent"
@@ -326,6 +361,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="YES"
+                                android:fontFamily="@font/open_sans"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorOffBlack"/>
                             <RadioButton
@@ -334,6 +370,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Need extra feature"
                                 android:textSize="14sp"
+                                android:fontFamily="@font/open_sans"
                                 android:textColor="@color/colorOffBlack"/>
                         </RadioGroup>
                     </FrameLayout>
@@ -345,6 +382,7 @@
                         android:background="@drawable/edit_text_border"
                         android:hint="Mention required feature name"
                         android:textSize="13sp"
+                        android:fontFamily="@font/open_sans"
                         android:padding="5dp"
                         android:textColorHint="#9C9C9C"
                         android:textColor="@color/colorOffBlack"/>
@@ -354,12 +392,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:gravity="center"
-                        android:background="@color/colortext"
+                        android:background="@drawable/button_background"
                         android:layout_marginTop="10dp">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Submit"
+                            android:fontFamily="@font/open_sans"
                             android:textColor="@color/white"
                             android:textSize="14sp"/>
 

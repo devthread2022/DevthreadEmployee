@@ -23,8 +23,6 @@ import com.jvt.devthread.employee.databinding.FragmentUpdateUXStatusBinding;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Locale;
-import java.util.Random;
 
 public class UpdateUXStatus extends Fragment {
     private FragmentUpdateUXStatusBinding binding;

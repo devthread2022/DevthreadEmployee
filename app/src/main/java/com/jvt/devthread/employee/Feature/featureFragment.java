@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -23,6 +24,7 @@ import com.jvt.devthread.employee.Activity.Common.Common;
 import com.jvt.devthread.employee.R;
 import com.jvt.devthread.employee.databinding.FragmentFeatureBinding;
 
+import java.util.Calendar;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -32,16 +34,59 @@ public class featureFragment extends Fragment {
     Handler handler = new Handler(Looper.getMainLooper());
     DatabaseReference databaseReference;
     FirebaseAuth firebaseAuth;
-    String uid;
+    String uid, name, empId, status, profile, gitHub, education, address, email, phone;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentFeatureBinding.inflate(inflater,container,false);
         View view = binding.getRoot();
+        Calendar c = Calendar.getInstance();
+        int timeOfDay = c.get(Calendar.HOUR_OF_DAY);
+
+        if(timeOfDay >= 0 && timeOfDay < 12){
+            binding.salutation.setText("Hi,Good Morning");
+        }else if(timeOfDay >= 12 && timeOfDay < 16){
+            binding.salutation.setText("Hi,Good Afternoon");
+        }else if(timeOfDay >= 16 && timeOfDay < 21){
+            binding.salutation.setText("Hi,Good Evening");
+        }else if(timeOfDay >= 21 && timeOfDay < 24){
+            binding.salutation.setText("Hi,Good Night");
+        }
         firebaseAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference();
         uid = firebaseAuth.getCurrentUser().getUid();
-        /*binding.demo.setOnClickListener(view1 -> {
+        databaseReference.child("Employees").child(uid).child("Info")
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (snapshot.exists()){
+                            name = snapshot.child("name").getValue().toString();
+                            empId = snapshot.child("empId").getValue().toString();
+                            status = snapshot.child("status").getValue().toString();
+                            profile = snapshot.child("profile").getValue().toString();
+                            gitHub = snapshot.child("gitHub").getValue().toString();
+                            education = snapshot.child("education").getValue().toString();
+                            address = snapshot.child("address").getValue().toString();
+                            email = snapshot.child("email").getValue().toString();
+                            phone = snapshot.child("phone").getValue().toString();
+                            Common.name = name;
+                            Common.empId = empId;
+                            Common.empEmail = email;
+                            Common.empPhone = phone;
+                            Common.empAddress = address;
+                            binding.empName.setText(name);
+                            Glide.with(getContext()).load(profile).into(binding.profileImage);
+                            binding.regId.setText(empId);
+                            binding.status.setText(status);
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+        binding.demo.setOnClickListener(view1 -> {
             Fragment demo = new DemoRequests();
             loadFragment(demo,"DemoRequests");
         });
@@ -70,7 +115,7 @@ public class featureFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()){
                     long count = snapshot.getChildrenCount();
-                    binding.demoCount.setText(count+"");
+                    //binding.demoCount.setText(count+"");
                 }
             }
 
@@ -84,7 +129,7 @@ public class featureFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()){
                     long count = snapshot.getChildrenCount();
-                    binding.uxCount.setText(count+"");
+                    //binding.uxCount.setText(count+"");
                 }
             }
 
@@ -98,7 +143,7 @@ public class featureFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()){
                     long count = snapshot.getChildrenCount();
-                    binding.testCount.setText(count+"");
+                    //binding.testCount.setText(count+"");
                 }
             }
 
@@ -112,7 +157,7 @@ public class featureFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()){
                     long count = snapshot.getChildrenCount();
-                    binding.frontCount.setText(count+"");
+                    //binding.frontCount.setText(count+"");
                 }
             }
 
@@ -126,7 +171,7 @@ public class featureFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()){
                     long count = snapshot.getChildrenCount();
-                    binding.deployCount.setText(count+"");
+                    //binding.deployCount.setText(count+"");
                 }
             }
 
@@ -140,7 +185,7 @@ public class featureFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()){
                     long count = snapshot.getChildrenCount();
-                    binding.backCount.setText(count+"");
+                    //binding.backCount.setText(count+"");
                 }
             }
 
@@ -148,7 +193,21 @@ public class featureFragment extends Fragment {
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
-        });*/
+        });
+        databaseReference.child("AdminEmail").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists()){
+                    String email = snapshot.child("email").getValue().toString();
+                    Common.adminEmail = email;
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
         binding.workUpdate.setOnClickListener(view1 -> {
             Fragment fragment = new WorkUpdate();
             loadFragment(fragment,"WorkUpdate");
@@ -160,6 +219,50 @@ public class featureFragment extends Fragment {
         binding.leave.setOnClickListener(view1 -> {
             Fragment fragment = new Leave();
             loadFragment(fragment,"Leave");
+        });
+        binding.timesheet.setOnClickListener(v -> {
+            Fragment fragment = new Timesheet();
+            loadFragment(fragment,"Timesheet");
+        });
+        binding.calender.setOnClickListener(v -> {
+            Fragment fragment = new Calender();
+            loadFragment(fragment,"Calender");
+        });
+        binding.tickets.setOnClickListener(v -> {
+            Fragment fragment = new Tickets();
+            loadFragment(fragment,"Tickets");
+        });
+        binding.project.setOnClickListener(v -> {
+            Fragment fragment = new Projects();
+            loadFragment(fragment,"Projects");
+        });
+        binding.chat.setOnClickListener(v -> {
+            Fragment fragment = new Chats();
+            loadFragment(fragment,"Chats");
+        });
+        binding.schedule.setOnClickListener(v -> {
+            Fragment fragment = new Schedule();
+            loadFragment(fragment,"Schedule");
+        });
+        binding.support.setOnClickListener(v -> {
+            Fragment fragment = new Support();
+            loadFragment(fragment,"Support");
+        });
+        binding.pDetail.setOnClickListener(v -> {
+            Fragment fragment = new Profile();
+            loadFragment(fragment,"Profile");
+        });
+        binding.profile.setOnClickListener(v -> {
+            Fragment fragment = new Profile();
+            loadFragment(fragment,"Profile");
+        });
+        binding.notification.setOnClickListener(v -> {
+            Fragment fragment = new Notification();
+            loadFragment(fragment,"Notification");
+        });
+        binding.setting.setOnClickListener(v -> {
+            Fragment fragment = new Settings();
+            loadFragment(fragment,"Settings");
         });
         return view;
     }

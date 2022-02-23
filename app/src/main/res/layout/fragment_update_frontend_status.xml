@@ -8,15 +8,22 @@
     android:orientation="vertical">
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:elevation="4dp"
-        android:background="@color/colortext">
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:elevation="1dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24_black"
+            android:layout_gravity="center|start"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Frontend Status Update"
-            android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textColor="@color/colorOffBlack"
             android:layout_gravity="center"/>
         <ImageView
             android:id="@+id/upDatedWork"
@@ -25,14 +32,14 @@
             android:layout_gravity="center|end"
             android:layout_marginEnd="10dp"
             android:src="@drawable/ic_baseline_group_work_24"/>
-
     </FrameLayout>
     <EditText
         android:id="@+id/work"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@drawable/edit_text_border"
+        android:background="@drawable/detail_btn_back"
         android:layout_margin="5dp"
+        android:fontFamily="@font/open_sans"
         android:hint="Work done today..."
         android:padding="5dp"
         android:textSize="16sp"
@@ -42,7 +49,8 @@
         android:id="@+id/hour"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@drawable/edit_text_border"
+        android:background="@drawable/detail_btn_back"
+        android:fontFamily="@font/open_sans"
         android:layout_margin="5dp"
         android:hint="Working hour.."
         android:padding="5dp"
@@ -53,7 +61,8 @@
         android:id="@+id/people"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@drawable/edit_text_border"
+        android:background="@drawable/detail_btn_back"
+        android:fontFamily="@font/open_sans"
         android:layout_margin="5dp"
         android:hint="No of people.."
         android:padding="5dp"
@@ -65,12 +74,13 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_margin="10dp"
-        android:background="@color/colortext"
+        android:background="@drawable/button_background"
         android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit"
+            android:fontFamily="@font/open_sans"
             android:textColor="@color/white"/>
 
     </LinearLayout>
@@ -81,6 +91,7 @@
         android:text="Frontend Completed"
         android:textColor="@color/colorOffBlack"
         android:layout_gravity="end"
+        android:fontFamily="@font/open_sans"
         android:layout_margin="20dp"/>
 
 </LinearLayout>

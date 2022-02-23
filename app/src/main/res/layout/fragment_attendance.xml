@@ -143,6 +143,7 @@
                             android:textColorHint="@color/colorOffBlack"
                             android:fontFamily="@font/open_sans"
                             android:hint="08:00"
+                            android:editable="false"
                             android:drawablePadding="5dp"/>
                     </LinearLayout>
                     <LinearLayout
@@ -174,6 +175,7 @@
                             android:textColorHint="@color/colorOffBlack"
                             android:fontFamily="@font/open_sans"
                             android:hint="17:15"
+                            android:editable="false"
                             android:drawablePadding="5dp"/>
                     </LinearLayout>
                 </TableRow>
@@ -267,6 +269,7 @@
                     android:layout_marginStart="15dp"/>
             </LinearLayout>
             <LinearLayout
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"

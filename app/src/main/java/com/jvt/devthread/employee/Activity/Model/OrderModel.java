@@ -3,6 +3,7 @@ package com.jvt.devthread.employee.Activity.Model;
 public class OrderModel {
     String orderId,orderStatus,assignedTo,priority,note,assignedBy,assignedDate,dueDate,productName,productDomain,assigneeContact
             ,productId,domainTag,productPlatform,productType,unselectedFeatures;
+
     public OrderModel() {
     }
 

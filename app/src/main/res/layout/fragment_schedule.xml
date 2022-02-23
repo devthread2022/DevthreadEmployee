@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feature.Schedule"
+    android:orientation="vertical"
+    android:background="#fbfbfb">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:elevation="1dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24_black"
+            android:layout_gravity="center|start"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company Work Information"
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textColor="@color/colorOffBlack"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/dear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dear Employee,"
+            android:textColor="@color/colorOffBlack"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"/>
+        <TextView
+            android:id="@+id/empId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your employee id: "
+            android:textColor="@color/colorOffBlack"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The terms of engagement are as follows:"
+            android:textColor="@color/colorOffBlack"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Training: 1 Month"
+            android:textColor="@color/colorOffBlack"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Period of engagement: 4 Months"
+            android:textColor="@color/colorOffBlack"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Chain of command: Beside the supervisor, you will be directly reporting to the Technical Head."
+            android:textColor="@color/colorOffBlack"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Your first day of working will be communicated to you through your registered email address."
+            android:textColor="@color/colorOffBlack"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. You will work 50 number of hours per week."
+            android:textColor="@color/colorOffBlack"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Salary offerings: 1.8 lakhs to 3.4 lakhs."
+            android:textColor="@color/colorOffBlack"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

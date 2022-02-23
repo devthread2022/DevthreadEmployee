@@ -1,17 +1,13 @@
 package com.jvt.devthread.employee.Activity.Adapters;
 
-import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.graphics.Color;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +17,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.jvt.devthread.employee.Activity.Common.Common;
 import com.jvt.devthread.employee.Activity.Model.OrderModel;
 import com.jvt.devthread.employee.Feature.AssignedWorkDetail;
-import com.jvt.devthread.employee.Feature.UpdateDemoRequest;
 import com.jvt.devthread.employee.Feature.UpdateUXStatus;
 import com.jvt.devthread.employee.R;
 

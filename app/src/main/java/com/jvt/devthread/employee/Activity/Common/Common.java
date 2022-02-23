@@ -58,4 +58,10 @@ public class Common {
     public static String pPlatform;
     public static String dTag;
     public static String uFeateures;
+    public static String name;
+    public static String empId;
+    public static String empEmail;
+    public static String empPhone;
+    public static String adminEmail;
+    public static String empAddress;
 }

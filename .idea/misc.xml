@@ -3,8 +3,61 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/drawable-v24/ic_baseline_arrow_back_ios_24_white.xml" value="0.19583333333333333" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/drawable-v24/ic_baseline_help_outline_24.xml" value="0.19583333333333333" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/drawable-v24/ic_baseline_note_add_24.xml" value="0.19583333333333333" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/drawable-v24/ic_baseline_verified_24.xml" value="0.19583333333333333" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/drawable-v24/profile_back.xml" value="0.19583333333333333" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/drawable/ic_baseline_group_work_24.xml" value="0.19166666666666668" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/activity_forget_password.xml" value="0.20416666666666666" />
         <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_feature.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/activity_splash_screen.xml" value="0.1814814814814815" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/assigned_order_layout.xml" value="0.22" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/assigned_project_layout.xml" value="0.1814814814814815" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/attendance_layout.xml" value="0.1814814814814815" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/demo_request_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_assigned_work_detail.xml" value="0.14907407407407408" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_attendance.xml" value="0.25" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_attendance_history.xml" value="0.17899543378995433" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_backend.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_calender.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_chats.xml" value="0.19010416666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_demo_requests.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_deployment.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_feature.xml" value="0.17899543378995433" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_frontend.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_leave.xml" value="0.1814814814814815" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_leave_history.xml" value="0.1814814814814815" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_notification.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_privacy.xml" value="0.1814814814814815" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_projects.xml" value="0.19010416666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_schedule.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_settings.xml" value="0.1814814814814815" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_support.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_terms.xml" value="0.1814814814814815" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_testing.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_tickets.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_timesheet.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_u_x.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_update_backend_status.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_update_demo_request.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_update_deployment_status.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_update_frontend_status.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_update_testing_status.xml" value="0.18" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_update_u_x_status.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_updated_work.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_work_history.xml" value="0.1814814814814815" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/fragment_work_update.xml" value="0.22" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/holiday_layout.xml" value="0.1814814814814815" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/layout_images.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/layout_product_added_feature_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/leave_layout.xml" value="0.1814814814814815" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/notification_layout.xml" value="0.17899543378995433" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/tandc_item_layout.xml" value="0.1814814814814815" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/ticket_layout.xml" value="0.17899543378995433" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/work_update.xml" value="0.1814814814814815" />
+        <entry key="..\:/DevthreadEmployee/app/src/main/res/layout/work_update_layout.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

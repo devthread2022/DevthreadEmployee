@@ -1,6 +1,5 @@
 package com.jvt.devthread.employee.Feature;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -21,7 +20,6 @@ import com.jvt.devthread.employee.Activity.Adapters.SelectedImagesAdapter;
 import com.jvt.devthread.employee.Activity.Common.Common;
 import com.jvt.devthread.employee.Activity.Model.SelectedFeatureModel;
 import com.jvt.devthread.employee.Activity.Model.SelectedImageModel;
-import com.jvt.devthread.employee.R;
 import com.jvt.devthread.employee.databinding.FragmentAssignedWorkDetailBinding;
 
 import java.util.ArrayList;

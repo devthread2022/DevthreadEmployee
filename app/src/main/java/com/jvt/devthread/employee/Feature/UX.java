@@ -18,7 +18,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.jvt.devthread.employee.Activity.Adapters.UXAdapter;
 import com.jvt.devthread.employee.Activity.Model.OrderModel;
-import com.jvt.devthread.employee.R;
 import com.jvt.devthread.employee.databinding.FragmentUXBinding;
 
 import java.util.ArrayList;

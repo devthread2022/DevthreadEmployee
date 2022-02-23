@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/holiday_i"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Holiday Name"
+            android:textColor="@color/colorOffBlack"
+            android:fontFamily="@font/open_sans"
+            android:textSize="15sp"
+            android:layout_gravity="start"
+            android:id="@+id/holidayName"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Holiday Date"
+            android:textColor="@color/colorOffBlack"
+            android:fontFamily="@font/open_sans_light"
+            android:textSize="13sp"
+            android:layout_gravity="start"
+            android:id="@+id/holidayDate"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+</LinearLayout>

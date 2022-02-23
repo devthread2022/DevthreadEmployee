@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Heading"
+        android:textSize="14sp"
+        android:textColor="@color/colorOffBlack"
+        android:fontFamily="@font/open_sans"
+        android:id="@+id/heading"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Content"
+        android:textSize="13sp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/colorOffBlack"
+        android:fontFamily="@font/open_sans"
+        android:id="@+id/content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Date"
+        android:layout_marginTop="2dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorOffBlack"
+        android:fontFamily="@font/open_sans_light"
+        android:id="@+id/date"/>
+
+</LinearLayout>
